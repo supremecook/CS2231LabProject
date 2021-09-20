@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello "+ "user.name");
         System.out.println("Welcome to the game");
-        String [] Commands ={"go forward", "go back", "go left", "go right","end" };
+        String [] Commands ={"go forward", "go back", "go left", "go right","end","help" };
         System.out.println("Please tell me what to do");
         Scanner input= new Scanner(System.in);
 
@@ -35,6 +35,11 @@ public class Main {
                 System.out.println("Bye!");
                 break;
 
+            }
+            else if (Command.equals(Commands[5]))
+            {
+                System.out.println("heres ur help");
+               
             }
             else
                 {
